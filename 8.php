@@ -1,10 +1,10 @@
 <?php
-$age = 99;
-if (!(gettype($age) == "string") && $age >= 18 && $age <= 59) {
+$age = "33das";
+if (gettype($age) == "integer" && $age >= 18 && $age <= 59) {
   echo "вам еще работать и работать";
-} elseif (!(gettype($age) == "string") && ($age > 0 || $age === 0) && $age <= 17) {
+} elseif (gettype($age) == "integer" && ($age > 0 || $age === 0) && $age <= 17) {
   echo "вам еще рано работать";
-} elseif (!(gettype($age) == "string") && $age > 59) {
+} elseif (gettype($age) == "integer" && $age > 59) {
   echo "вам пора на пенсию";
 } else {
   echo "неизвестный возраст";
