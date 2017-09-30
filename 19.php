@@ -7,3 +7,7 @@ if ($a == $b) {
   echo $a . " не равно " . $b . "<br>";
 };
 var_dump($a, $b);
+echo "<br>";
+var_dump($a == $b);
+echo "<br>";
+var_dump($a === $b);
